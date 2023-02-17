@@ -8,7 +8,7 @@ export const App = () => {
 
 
   const getList = async (query) => {
-    const { data: result } = await axios.get(`http://localhost:5757/price/?name=${query}`)
+    const { data: result } = await axios.get(`http://localhost:2222/price/?name=${query}`)
     setData(result)
   }
 
@@ -56,64 +56,85 @@ export const App = () => {
         </ul>
       </div>
       <div className="precos">
-        {/*<!--RESCREVER COMPLETAMENTE ESSA classNameE 'nosso-preco'-->*/}
-        {data.listWithAL && (
+        {data?.listWithAL ? (
           <div className="nosso-preco">
             <div className="preco">
               <ul className="preco-item">
-                <li>preço: {''}
-                  <div className="description2"></div>
+                <li>preço:
+                  <div className="description2">{data.listWithAL[0]?.price}</div>
                 </li>
               </ul>
             </div>
             <div className="preco">
               <ul className="preco-item">
-                <li>titulo: {''}</li>
-                <div className="description2"></div>
+                <li>titulo:</li>
+                <div className="description2">{data.listWithAL[0]?.title}</div>
               </ul>
             </div>
             <div className="preco">
               <ul className="preco-item">
-                <li>origem: {''}</li>
-                <div className="description2"></div>
+                <li>origem:</li>
+                <a href={data.listWithAL[0]?.urlLink} target='_blank'><div className="description2">{data.listWithAL[0]?.loja}</div></a>
               </ul>
             </div>
           </div>
-        )}
+        )
+          : null
+        }
       </div>
       <main className="search-scraping">
         <div>
           <h1 className="title">preços:</h1>
         </div>
         <div className="container-card">
-          {/*<!--RESCREVER COMPLETAMENTE ESSA classNameE 'cards'-->*/}
-          <>
-            {data.fullList?.map(card => {
-              return (
-                <div key={card.urlLink} className="cards">
-                  <div className="item-card">
-                    <img src={card.image} alt="imagem do produto" />
-                    <div className="detals">
-                      <div className="detals-item">
-                        <h4>preço: {card.price}</h4>
-                        <div className="description"></div>
-                      </div>
-                      <div className="detals-item">
-                        <h4>titulo: {card.title}</h4>
-                        <div className="description"></div>
-                      </div>
-                      <div className="detals-item">
-                        <h4>origem: {card.urlLink}</h4>
-                        <div className="description"></div>
+          {data.fullList ? (
+            <>
+              {data.fullList.map(card => {
+                return (
+                  <div key={card.urlLink} className="cards">
+                    <div className="item-card">
+                      <img src={card.image} alt="imagem do produto" />
+                      <div className="detals">
+                        <div className="detals-item">
+                          <h4>preço:</h4>
+                          <div className="description">{card.price}</div>
+                        </div>
+                        <div className="detals-item">
+                          <h4>titulo:</h4>
+                          <div className="description">{card.title}</div>
+                        </div>
+                        <div className="detals-item">
+                          <h4>origem:</h4>
+                          <a href={card.urlLink} target='_blank'><div className="description">{card.loja}</div></a>
+                        </div>
                       </div>
                     </div>
                   </div>
+                )
+              })
+              }
+            </>
+          ) : (
+            <div className="cards">
+              <div className="item-card">
+                <img alt="imagem do produto" />
+                <div className="detals">
+                  <div className="detals-item">
+                    <h4>preço:</h4>
+                    <div className="description"></div>
+                  </div>
+                  <div className="detals-item">
+                    <h4>titulo:</h4>
+                    <div className="description"></div>
+                  </div>
+                  <div className="detals-item">
+                    <h4>origem:</h4>
+                    <div className="description"></div>
+                  </div>
                 </div>
-              )
-            })
-
-            }
-          </>
+              </div>
+            </div>
+          )}
         </div>
       </main>
     </>
