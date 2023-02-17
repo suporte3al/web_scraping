@@ -68,7 +68,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: start;
-    border-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
 }
 .placeholder {
     background-color: #fff;
@@ -156,8 +156,22 @@ button:hover {
     color: #0C5EA3;
 }
 .title {
-    margin-top: 380px;
+    padding: 15px;
+    background-color: #0C5EA3;
+    margin-left: 161px;
+    margin-right: 160px;
+    color: #fff;
+    font-weight: 100;
 }
+.title-descri {
+    padding: 15px;
+    background-color: #0C5EA3;
+    margin-left: 138px;
+    margin-right: 137px;
+    color: #fff;
+    font-weight: 100;
+}
+
 /*BACKGROUND DOS CARDS*/
 .search-scraping {
     display: flex;
@@ -166,29 +180,38 @@ button:hover {
 .container-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: auto;
+    justify-content: space-around;
+    width: 1204px;
     height: auto;
     background: #0C5EA3;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 380px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.container-card-des {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1250px;
+    height: auto;
+    background: #0C5EA3;
+    border-radius: 8px;
+    margin-top: 250px;
     position: relative;
     margin-bottom: 60px;
 }
 
 /*CARD DE PRODUTOS*/
 .cards {
-    width: 250px;
+    width: 480px;
     height: auto;
     background-color: #fff;
     margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-    border-radius: 4px;
+    padding: 0px 30px 0px 30px;
     margin-bottom: 60px;
+    border-radius: 4px;
 }
-
-
 .item-card img {
     padding: 32px 35px 0px 35px;
     width: 250px;

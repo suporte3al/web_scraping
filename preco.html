@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço</title>
     <link rel="stylesheet" href="main.css">
-    <title>Descrição</title>
 </head>
+
 <body>
     <section class="fixo">
         <header class="container">
@@ -18,7 +20,7 @@
                 </div>
                 <div class="nav">
                     <ul class="menu">
-                        <li><a class="menu-nav" href="">preços</a></li>
+                        <li><a class="menu-nav" href="./preco.html">preços</a></li>
                         <li><a class="menu-nav" href="./descricao.html">descrição</a></li>
                         <li><a class="menu-nav" href="">tags</a></li>
                     </ul>
@@ -37,10 +39,35 @@
                 </div>
             </div>
         </div>
-        <div><h1 class="title-descri">Resultado da sua Pesquisa</h1></div>
+        <div class="tags">
+            <ul class="name-product">
+                <li><button class="menu-item" href="#">cabos</button></li>
+                <li><button class="menu-item" href="#">arame</button></li>
+                <li><button class="menu-item" href="#">ducha</button></li>
+                <li><button class="menu-item" href="#">trena</button></li>
+                <li><button class="menu-item" href="#">discos</button></li>
+                <li><button class="menu-item" href="#">bombas</button></li>
+                <li><button class="menu-item" href="#">eletrodo</button></li>
+                <li><button class="menu-item" href="#">torneiras</button></li>
+
+            </ul>
+        </div>
+        <div class="precos">
+            <!--RESCREVER COMPLETAMENTE ESSA CLASSE 'nosso-preco'-->
+            <div class="nosso-preco">
+                <div class="preco">
+                    <ul class="preco-item">
+                        <li class="item"><span>preço: </span><span class="item-preco"></span></li>
+                        <li class="item"><span>titulo: </span><span class="item-preco"></span></li>
+                        <li class="item"><span>origem: </span><span class="item-preco"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div><h1 class="title">Resultado da sua Pesquisa</h1></div>
     </section>
     <main class="search-scraping">
-        <div class="container-card-des">
+        <div class="container-card">
             <!--RESCREVER COMPLETAMENTE ESSA CLASSE 'cards'-->
             <div class="cards">
                 <div class="item-card">
@@ -62,8 +89,10 @@
                 </div>
             </div>
            
+            
         </div>
     </main>
-
 </body>
+
+
 </html>
