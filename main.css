@@ -156,18 +156,20 @@ button:hover {
     color: #0C5EA3;
 }
 .title {
+    position: absolute;
     padding: 15px;
     background-color: #0C5EA3;
-    margin-left: 161px;
-    margin-right: 160px;
+    margin-top: 380px;
+    width: 1204px;
     color: #fff;
     font-weight: 100;
 }
 .title-descri {
+    position: absolute;
     padding: 15px;
     background-color: #0C5EA3;
-    margin-left: 138px;
-    margin-right: 137px;
+    margin-top: 220px;
+    width: 1204px;
     color: #fff;
     font-weight: 100;
 }
@@ -185,7 +187,7 @@ button:hover {
     height: auto;
     background: #0C5EA3;
     border-radius: 8px;
-    margin-top: 380px;
+    margin-top: 432px;
     position: relative;
     margin-bottom: 60px;
 }
@@ -193,11 +195,11 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1250px;
+    width: 1204px;
     height: auto;
     background: #0C5EA3;
     border-radius: 8px;
-    margin-top: 250px;
+    margin-top: 280px;
     position: relative;
     margin-bottom: 60px;
 }
@@ -213,7 +215,7 @@ button:hover {
     border-radius: 4px;
 }
 .item-card img {
-    padding: 32px 35px 0px 35px;
+    margin: 80px 80px 15px 80px;
     width: 250px;
     height: 182px;
     border-radius: 8px;
