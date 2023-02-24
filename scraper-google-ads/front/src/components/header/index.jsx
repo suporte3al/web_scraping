@@ -12,8 +12,8 @@ export const Header = () => {
                     </div>
                     <div className={styles.nav}>
                         <ul className={styles.menu}>
-                            <li><a className={styles.menuNav} href="./preco.html">preços</a></li>
-                            <li><a className={styles.menuNav} href="">descrição</a></li>
+                            <li><a className={styles.menuNav} href='/'>preços</a></li>
+                            <li><a className={styles.menuNav} href='/description'>descrição</a></li>
                             <li><a className={styles.menuNav} href="">tags</a></li>
                         </ul>
                     </div>
