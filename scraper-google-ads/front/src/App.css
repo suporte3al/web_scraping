@@ -1,203 +1,165 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
 li a {
-  text-decoration: none;
-  text-transform: uppercase;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 a:hover {
-  color: #ffd020;
-  text-decoration: underline;
+    color: #ffd020;
+    text-decoration: underline;
 }
-
-/*HEADER*/
-.header {
-  background-color: #0C5EA3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 103px;
-}
-.logos {
-  margin-left: 101px;
-}
-.logo-tipo {
-  margin-right: 32px;
-}
-.nav {
-  margin-right: 121px;
-}
-
-/*NAVEGAÇÃO*/
-.menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 35px;
-}
-.menu-nav {
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/*SEARCH*/
-.search-top {
-  display: flex;
-  justify-content: center;
-}
-.search {
-  background-color: #0C5EA3;
-  margin-top: 32px;
-  width: 600px;
-  height: 63px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  border-radius: 4px;
-}
-.placeholder {
-  background-color: #fff;
-  border-radius: 8px;
-  width: 538px;
-  height: 43px;
-  margin-left: 10px;
-  
-}
-.placeholder h3 {
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 400;
-  color: #959595;
-  opacity: 0.5;
-  padding: 13px 10px 0px 13px;
-}
-.icon a {
-  margin-left: 10px;
-}
-
 
 /*TAGS DE BUSCA RÁPIDA*/
 .tags {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
 }
 
 .name-product {
-  display: flex;
-  list-style: none;
-  margin-top: 32px;
-  gap: 35px;
+    display: flex;
+    list-style: none;
+    padding: 32px 0px 32px 0px;
+    gap: 35px;
+}
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0C5EA3;
+}
+button:hover {
+    background-color: #ffd020;
+    color: #0C5EA3;
 }
 .menu-item {
-  color: #0C5EA3;
-  font-weight: bold;
-  font-size: 12px;
+    text-transform: capitalize;
+    color: #0C5EA3;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffd020;
 }
-
-
 
 
 /*LISTA DOS NOSSOS PREÇOS*/
 .precos {
-  margin-top: 32px;
-  height: auto;
+    height: auto;
+    background-color: #fff;
+    
 }
 .nosso-preco {
-  background-color: #ffd020;
-  border-radius: 16px;
-  border-bottom: #0C5EA3 solid;
-  display: flex;
-  max-width: 790px;
-  max-height: 130px;
-  margin: 0 auto;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+    background-color: #ffd020;
+    border-radius: 16px;
+    border-bottom: #0C5EA3 solid;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
 }
-.preco {
-  margin-left: 12px;
-  grid-auto-columns: 100px;
-  margin-right: 100px;
-}
+
 .preco-item {
-  font-size: 14px;
-  text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
 }
-.description2 {
-  font-size: 10px;
-  margin-left: 12px;
-  font-weight: bold;
-  color: #0C5EA3;
+.preco-item .item {
+    margin-left: 10px;
+    width: 100%;
+
+}
+.preco-item .item-preco {
+    font-size: 20px;
+    color: #0C5EA3;
+}
+.title {
+    position: absolute;
+    padding: 15px;
+    background-color: #0C5EA3;
+    margin-top: 380px;
+    width: 1204px;
+    color: #fff;
+    font-weight: 100;
+}
+.title-descri {
+    position: absolute;
+    padding: 15px;
+    background-color: #0C5EA3;
+    margin-top: 220px;
+    width: 1204px;
+    color: #fff;
+    font-weight: 100;
 }
 
 /*BACKGROUND DOS CARDS*/
 .search-scraping {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .container-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: auto;
-  height: auto;
-  background: #0C5EA3;
-  border-radius: 8px;
-  margin-top: 32px;
-  position: relative;
-  margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1204px;
+    height: auto;
+    background: #0C5EA3;
+    border-radius: 8px;
+    margin-top: 432px;
+    position: relative;
+    margin-bottom: 60px;
 }
-.title {
-  position: absolute;
-  z-index: 1;
-  margin-top: 47px;
-  margin-left: 14px;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
+.container-card-des {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1204px;
+    height: auto;
+    background: #0C5EA3;
+    border-radius: 8px;
+    margin-top: 280px;
+    position: relative;
+    margin-bottom: 60px;
 }
-
 
 /*CARD DE PRODUTOS*/
 .cards {
-  width: 250px;
-  height: auto;
-  background-color: #fff;
-  margin-top: 50px;
-  margin-left: 60px;
-  margin-right: 60px;
-  border-radius: 4px;
-  margin-bottom: 60px;
+    width: 480px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 60px;
+    border-radius: 4px;
 }
-
-
 .item-card img {
-  padding: 32px 35px 0px 35px;
-  width: 250px;
-  height: 182px;
-  border-radius: 8px;
+    margin: 80px 80px 15px 80px;
+    width: 250px;
+    height: 182px;
+    border-radius: 8px;
 }
 
 .detals h4 {
-  margin-top: 12px;
-  margin-left: 12px;
-  text-decoration: underline;
+    padding: 5px;
+    text-decoration: underline;
+    
+    
 }
 .detals-item {
-  margin-bottom: 12px;
-  
+    margin-bottom: 12px;
+    
 }
 .description {
-  margin-left: 12px;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  color: #0C5EA3;
-  text-transform: uppercase;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #0C5EA3;
+    padding: 5px;
+
 }

@@ -1,10 +1,11 @@
 import axios from 'axios'
-import { useState, useEffect } from 'react'
 import './App.css'
+import { useState, useEffect } from 'react'
+import { HeaderWrapper } from './components/header-wrapper'
 
 export const App = () => {
   const [data, setData] = useState([])
-  const productToSearch = ['Cabo Flexivel-2,5mm-750V-Vermelho-100-Metros-Sil', 'Bomba-Periferica-1/2Cv-(220V)-Ecobomba', 'trena']
+  const productToSearch = ['Cabo Flexivel-2,5mm-750V-Vermelho-100-Metros-Sil', 'Bomba-Periferica-1/2Cv-(220V)-Ecobomba', 'Fechadura Alavanca Wc Premium 2800/71 Ip Aliança']
 
 
   const getList = async (query) => {
@@ -15,33 +16,7 @@ export const App = () => {
   useEffect(() => { }, [data])
   return (
     <>
-      <header className="container">
-        <div className="header">
-          <div className="logos">
-            <img className="logo-tipo" src="./src/assets/images/logo_maranguape.png" alt="logo comercial maranguape" />
-            <img className="logo-tipo" src="./src/assets/images/logo_atacado_lojista_pq (1).png" alt="logo atacado do lojista" />
-          </div>
-          <div className="nav">
-            <ul className="menu">
-              <li><a className="menu-nav" href="">preços</a></li>
-              <li><a className="menu-nav" href="">descrição</a></li>
-              <li><a className="menu-nav" href="">tags</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div className="search-top">
-        <div className="search">
-          <div className="placeholder">
-            <h3>Digite o produto que deseja pesquisar</h3>
-          </div>
-          <div className="icon">
-            <a href="#">
-              <img src="./src/assets/icons/search_icone.svg" alt="lupa" />
-            </a>
-          </div>
-        </div>
-      </div>
+      <HeaderWrapper />
       <div className="tags">
         <ul className="name-product">
           <li><button className="menu-item" onClick={() => getList(productToSearch[0])}>cabos</button></li>
