@@ -4,7 +4,7 @@ const url = 'https://www.google.com.br/'
 
 let itemCountInList = 0
 
-const scraperBomba = async (productName) => {
+const scraper = async (productName) => {
   const browser = await pup.launch()
   const page = await browser.newPage()
   
@@ -84,7 +84,7 @@ const list_AL_itens = (itemList) => {
 export const GetList = async (req, res) => {
   const productName = req.query.name
   
-  const fullList = await scraperBomba(productName)
+  const fullList = await scraper(productName)
   sortSellersPrice(fullList)
 
   const ownBrandListed = listOwnBrand(fullList, 'ecobomba')
