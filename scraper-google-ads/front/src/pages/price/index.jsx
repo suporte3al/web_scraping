@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { CardPrice } from '../../components/card-price'
+import { SearchTop } from '../../components/search-top'
 import { ComponentSkeleton } from '../../components/skeleton'
 import { Tag } from '../../components/tag'
 import styles from './main.module.css'
@@ -29,6 +30,7 @@ export const Price = () => {
   useEffect(() => { }, [data])
   return (
     <>
+    <SearchTop getList={getList}/>
       <div className={styles.tags}>
         <ul className={styles.nameProduct}>
           {

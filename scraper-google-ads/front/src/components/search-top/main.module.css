@@ -16,9 +16,11 @@
 .placeholder {
   background-color: #fff;
   border-radius: 8px;
+  border: none;
+  padding: 8px;
   width: 538px;
   height: 43px;
-  margin-left: 10px;
+  margin: 0 8px;
   
 }
 .placeholder h3 {
@@ -30,13 +32,10 @@
   padding: 13px 10px 0px 13px;
 }
 
-.icon button {
+.search button {
   padding: 12px;
   cursor: pointer;
   border: none;
   background-color: #0C5EA3;
 }
 
-.icon a {
-  margin-left: 10px;
-}
