@@ -9,9 +9,9 @@ export const SearchTop = () => {
             <h3>Digite o produto que deseja pesquisar</h3>
           </div>
           <div className={styles.icon}>
-            <a href="#">
+            <button href="#">
               <img src="src/assets/icons/search_icone.svg" alt="lupa" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

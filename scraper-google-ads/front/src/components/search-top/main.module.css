@@ -29,6 +29,14 @@
   opacity: 0.5;
   padding: 13px 10px 0px 13px;
 }
+
+.icon button {
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #0C5EA3;
+}
+
 .icon a {
   margin-left: 10px;
 }
