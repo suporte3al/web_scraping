@@ -5,7 +5,7 @@ export const ComponentSkeleton = () => {
   return (
     <>
       <div className={styles.skeletonContainer}>
-        <MoonLoader className='spinning' color="#36d7b7" />
+        <MoonLoader className='spinning' color="#ffd020" />
       </div>
     </>
   )

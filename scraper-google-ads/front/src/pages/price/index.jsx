@@ -50,7 +50,7 @@ export const Price = () => {
               <ul className={styles.precoItem}>
                 <li className={styles.item}><span>preço: </span><span className={styles.itemPreco}>{data.listWithAL[0]?.price}</span></li>
                 <li className={styles.item}><span>titulo: </span><span className={styles.itemPreco}>{data.listWithAL[0]?.title}</span></li>
-                <li className={styles.item}><span>origem: </span><span className={styles.itemPreco}>{data.listWithAL[0]?.loja}</span></li>
+                <li className={styles.item}><span>origem: </span><a target='_blank' href={data.listWithAL[0].urlLink}><span className={styles.itemPreco}>{data.listWithAL[0]?.loja}</span></a></li>
               </ul>
             </div>
           </div>
