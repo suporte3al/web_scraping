@@ -42,30 +42,30 @@
   font-size: 20px;
   color: #0C5EA3;
 }
-.title {
-  position: absolute;
-  padding: 15px;
-  background-color: #0C5EA3;
-  margin-top: 380px;
-  width: 1204px;
-  color: #fff;
-  font-weight: 100;
-}
 
 /*BACKGROUND DOS CARDS*/
 .searchScraping {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.containerCard, .title {
+  width: 1204px;
+  background: rgb(12, 94, 163, 0.87);
 }
 .containerCard {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 1204px;
   height: auto;
-  background: #0C5EA3;
-  border-radius: 8px;
-  margin-top: 80px;
   position: relative;
-  margin-bottom: 60px;
+}
+ 
+.title {
+  padding: 15px;
+  margin-top: 180px;
+  color: #fff;
+  font-weight: 100;
 }
